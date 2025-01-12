@@ -1,0 +1,351 @@
+#baptist {
+    background-color: black;
+    overflow: hidden;
+
+    .flex {
+        display: flex;
+    }
+
+    .box {
+        z-index: 2;
+
+        .part-1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 2px white solid;
+        }
+
+        .part-2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 2px white solid;
+        }
+
+        .part-3 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 2px white solid;
+        }
+
+        .part-4 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 2px white solid;
+        }
+    }
+
+    .first-block,
+    .second-block,
+    .third-block,
+    .fourth-block,
+    .fifth-block,
+    .sixth-block,
+    .seventh-block,
+    .eighth-block,
+    .ninth-block,
+    .tenth-block,
+    .eleventh-block,
+    .twelfth-block,
+    .thirteenth-block,
+    .fourteenth-block {
+        z-index: 5;
+        position: fixed;
+
+
+        .part-a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 2px white solid;
+        }
+
+        .part-b {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 2px white solid;
+        }
+
+        .part-c {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 2px white solid;
+        }
+
+        .part-d {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 2px white solid;
+        }
+    }
+
+
+    .opening {
+        height: 60vh;
+        width: auto;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding: 2rem;
+        z-index: 1;
+
+        h1 {
+            color: black;
+            text-align: center;
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-family: 'Press Start 2P', cursive;
+            z-index: 10;
+        }
+
+        h3 {
+                color: #d792ff;
+                text-align: center;
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-family: 'Press Start 2P', cursive;
+                z-index: 10;
+        }
+
+        audio {
+            z-index: 10;
+        }
+    }
+
+    .second {
+        padding: 10rem;
+        background-color: black;
+        height: 100vh;
+        width: auto;
+        z-index: 1;
+
+        h2 {
+            color: white;
+            font-size: 2rem;
+            font-family: 'Press Start 2P', cursive;
+            text-transform: uppercase;
+            z-index: 5000;
+            text-align: center;
+        }      
+    }
+
+    .room {
+        height: 4rem;
+    }
+
+    .third {
+        background-color: black;
+        height: 100vh;
+        width: auto;
+        position: relative;
+    }
+
+
+    .lavalamp {
+        height: 150vh;
+        width: 100%;
+        overflow: hidden;
+        background-color: black;
+        position: relative;
+    }
+    
+    .element {
+        width: 100px;
+        height: 100px;
+        top: -20%;
+        animation: fall 20s infinite;
+        position: absolute;
+    }
+    
+    @keyframes fall {
+        0%, 100% {
+            top: -20%;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+    
+        10% {
+            border-radius: 16% 84% 18% 82% / 74% 24% 76% 26%;
+        }
+    
+        20% {
+            border-radius: 17% 83% 79% 21% / 37% 62% 38% 63%;
+        }
+    
+        30% {
+            border-radius: 37% 63% 52% 48% / 60% 27% 73% 40%;
+        } 
+    
+        40% {
+            border-radius: 65% 35% 82% 18% / 36% 69% 31% 64% 
+        }
+    
+        50% {
+            top: 105%;
+            border-radius: 31% 69% 36% 64% / 62% 42% 58% 38%;
+        }
+    
+        60% {
+            border-radius: 65% 35% 82% 18% / 36% 69% 31% 64% 
+        }
+    
+        70% {
+            border-radius: 37% 63% 52% 48% / 60% 27% 73% 40%;
+        }
+    
+        80% {
+            border-radius: 17% 83% 79% 21% / 37% 62% 38% 63%;
+        }
+    
+        90% {
+            border-radius: 16% 84% 18% 82% / 74% 24% 76% 26%
+        }
+    }
+    
+    .element:nth-of-type(2n) {
+        width: 60px;
+        height: 60px;
+        background-image: radial-gradient(#70ffd9, #33ffba);
+    }
+    
+    .element:nth-of-type(3n) {
+        width: 120px;
+        height: 120px;
+        background-image: radial-gradient(#d792ff, #cc7cfc);
+    }
+    
+    .element:nth-of-type(1) {
+        left: 30%;
+        animation-delay: 1s;
+    }
+    
+    .element:nth-of-type(2) {
+        left: 60%;
+        animation-delay: 2s;
+    }
+    
+    .element:nth-of-type(3) {
+        left: 25%;
+        animation-delay: 3s;
+    }
+    
+    .element:nth-of-type(4) {
+        left: 75%;
+        animation-delay: 4s;
+    }
+    
+    .element:nth-of-type(5) {
+        left: 35%;
+        animation-delay: 5s;
+    }
+    
+    .element:nth-of-type(6) {
+        left: 50%;
+        animation-delay: 6s;
+    }
+    
+    .element:nth-of-type(7) {
+        left: 65%;
+        animation-delay: 7s;
+    }
+    
+    .element:nth-of-type(8) {
+        left: 35%;
+        animation-delay: 8s;
+    }
+    
+    .element:nth-of-type(9) {
+        left: 55%;
+        animation-delay: 9s;
+    }
+    
+    .element:nth-of-type(10) {
+        left: 10%;
+        animation-delay: 10s;
+    }
+    
+    .element:nth-of-type(11) {
+        left: 35%;
+        animation-delay: 11s;
+    }
+    
+    .element:nth-of-type(12) {
+        left: 50%;
+        animation-delay: 12s;
+    }
+    
+    .element:nth-of-type(13) {
+        left: 65%;
+        animation-delay: 13s;
+    }
+    
+    .element:nth-of-type(14) {
+        left: 40%;
+        animation-delay: 14s;
+    }
+    
+    .element:nth-of-type(15) {
+        left: 65%;
+        animation-delay: 15s;
+    }
+
+    .border {
+        position: absolute;
+        width: 100%;
+        height: 10%;
+    }
+
+    .border:nth-last-of-type(1) {
+        top: 0;
+        left: 0;
+    }
+
+    .border:nth-last-of-type(2) {
+        bottom: 0;
+        left: 0;
+        background-color: #33ffba;
+    }
+
+    
+
+    @media screen and (max-width: 60rem)  {
+        .opening h1 {
+            font-size: 1rem;
+        }
+
+        .second h2 {
+            font-size: 1rem;
+        }
+
+        .opening {
+            padding: 5rem;
+        }
+
+        .second {
+            padding: 5rem;
+        }
+    }
+}

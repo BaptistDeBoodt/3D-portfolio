@@ -1,0 +1,45 @@
+import React, { useState, useEffect } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { Physics } from '@react-three/rapier';
+import StaticCamera from '../Components/Inside/Camera/StaticCamera';
+import InsideHouse from './InsideHouse';
+import RugInterface from './interfaces/rugInterface';
+import GhostInterface from './interfaces/GhostInterface';
+import SkullInterface from './interfaces/SkullInterface';
+import ChandelierInterface from './interfaces/ChandelierInterface';
+import BookInterface from './interfaces/BookInterface';
+import VinylInterface from './interfaces/VinylInterface';
+import DoorInterface from './interfaces/DoorInterface';
+import ReaperInterface from './interfaces/ReaperInterface';
+import ZombieInterface from './interfaces/ZombieInterface';
+
+const Main = () => {
+    const [activeObject, setActiveObject] = useState(null); // Track which object is active
+
+    const handleObjectClick = (objectName) => {
+        setActiveObject(objectName); // Update active object when clicked
+    };
+
+    return (
+        <>
+            <Canvas shadows camera={{ fov: 45, near: 0.1, far: 200, position: [7, 2, 17] }}>
+                <Physics>
+                    <InsideHouse onObjectClick={handleObjectClick} />
+                    <StaticCamera />
+                </Physics>
+            </Canvas>
+
+            {activeObject === 'Rug' && <RugInterface />}
+            {activeObject === 'Ghost' && <GhostInterface />}
+            {activeObject === 'Skull' && <SkullInterface />}
+            {activeObject === 'Chandelier' && <ChandelierInterface />}
+            {activeObject === 'Book' && <BookInterface />}
+            {activeObject === 'Vinyl' && <VinylInterface />}
+            {activeObject === 'Door' && <DoorInterface />}
+            {activeObject === 'Reaper' && <ReaperInterface />}
+            {activeObject === 'Zombie' && <ZombieInterface />}
+        </>
+    );
+};
+
+export default Main;

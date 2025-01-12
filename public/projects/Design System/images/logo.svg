@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_2" data-name="Laag 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.15 120.36">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+        stroke: #1d1d1b;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #1d1d1b;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 12px;
+      }
+    </style>
+  </defs>
+  <g id="Laag_1-2" data-name="Laag 1">
+    <g>
+      <g>
+        <g id="big_triangle" data-name="big triangle">
+          <path class="cls-2" d="M14.99,1.8L170.66,98.45l-155.67,.43V1.8Z"/>
+          <path class="cls-2" d="M168.91,97.95L15.49,2.7V98.37s153.42-.42,153.42-.42m3.49,.99l-157.91,.43V.9S172.4,98.94,172.4,98.94Z"/>
+        </g>
+        <g id="triangle">
+          <line id="Line_1" data-name="Line 1" class="cls-1" x1="18.1" y1="89.02" x2="18.1" y2="95.97"/>
+          <line id="Line_2" data-name="Line 2" class="cls-1" x1="25.1" y1="96.02" x2="18.1" y2="95.97"/>
+        </g>
+      </g>
+      <text class="cls-3" transform="translate(0 56.36)"><tspan x="0" y="0">A</tspan></text>
+      <text class="cls-3" transform="translate(79 117.36)"><tspan x="0" y="0">B</tspan></text>
+      <text class="cls-3" transform="translate(97 46.36)"><tspan x="0" y="0">C</tspan></text>
+    </g>
+  </g>
+</svg>
