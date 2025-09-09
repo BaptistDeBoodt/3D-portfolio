@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'scary';
-    src: url(fonts/Danger.otf) format('opentype');
+    src: url('/fonts/Danger.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'bloodcrow';
-    src: url(fonts/bloodcrow.ttf) format('opentype');
+    src: url('/fonts/bloodcrow.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
