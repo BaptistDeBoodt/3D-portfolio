@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { Physics } from '@react-three/rapier';
 import StaticCamera from '../Components/Inside/Camera/StaticCamera';
 import InsideHouse from './InsideHouse';
-import RugInterface from './interfaces/rugInterface';
+import RugInterface from './interfaces/RugInterface';
 import GhostInterface from './interfaces/GhostInterface';
 import SkullInterface from './interfaces/SkullInterface';
 import ChandelierInterface from './interfaces/ChandelierInterface';
