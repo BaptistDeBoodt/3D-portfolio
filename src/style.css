@@ -1,12 +1,18 @@
 @font-face {
     font-family: 'scary';
-    src: url(fonts/Danger.otf);
+    src: url(fonts/Danger.otf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'bloodcrow';
-    src: url(fonts/bloodcrow.ttf);
-}
+    src: url(fonts/bloodcrow.ttf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+} 
 
 html,
 body,
